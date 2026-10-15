@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rancho Onazol</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Rancho Onazol is a Latino-owned event venue in Brownsville, Texas, with a pool, a palapa pavilion, a lighted gazebo island and garden grounds. Open daily. Call (956) 556-6117.">
+<meta name="theme-color" content="#0F1B26">
+<link rel="canonical" href="https://ranchoonazol.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rancho Onazol">
+<meta property="og:title" content="Rancho Onazol | Event venue in Brownsville, TX">
+<meta property="og:description" content="A pool, a palapa pavilion, a lighted gazebo island and garden grounds for birthdays, family gatherings and outdoor events.">
+<meta property="og:url" content="https://ranchoonazol.com/">
+<meta property="og:image" content="https://ranchoonazol.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The lighted gazebo and wooden bridge at Rancho Onazol at night">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ranchoonazol.com/assets/og.jpg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/poster.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Gloock&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EventVenue",
+  "name": "Rancho Onazol",
+  "url": "https://ranchoonazol.com/",
+  "telephone": "+1-956-556-6117",
+  "image": "https://ranchoonazol.com/assets/og.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "8685 FM1732",
+    "addressLocality": "Brownsville",
+    "addressRegion": "TX",
+    "postalCode": "78520",
+    "addressCountry": "US"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Rancho%20Onazol%2C%208685%20FM1732%2C%20Brownsville%2C%20TX%2078520",
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "20:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday","Sunday"], "opens": "09:00", "closes": "23:59"}
+  ]
+}
+</script>
+<style>
+/* Layout: night-garden page. Full-bleed film opening, then asymmetric left-aligned
+   sections on deep night blue, one daylight band for guest words, night again for visiting. */
+:root{
+  --ink:#0F1B26;        /* night sky over the grounds */
+  --ink-2:#172A39;      /* raised night surface */
+  --line:#2A4152;       /* hairlines on night */
+  --straw:#D9B877;      /* palapa thatch, lantern light */
+  --lagoon:#5CCBD1;     /* lit pool water */
+  --moon:#EFE8D8;       /* text on night */
+  --mist:#A4B3BC;       /* secondary text on night */
+  --day:#E8F0EA;        /* daylight band */
+  --day-ink:#13242F;    /* text on daylight */
+  --day-mute:#4F6470;
+  --display:"Gloock","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --body:"Figtree","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --step-0:1.0625rem; --step-1:1.33rem; --step-2:1.77rem; --step-3:2.6rem; --step-4:clamp(2.4rem,5.4vw,4rem);
+  --gutter-l:max(20px, env(safe-area-inset-left, 0px));
+  --gutter-r:max(20px, env(safe-area-inset-right, 0px));
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--moon);font:400 var(--step-0)/1.6 var(--body);overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:2px solid var(--straw);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin-inline:auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--straw);color:var(--ink);padding:8px 14px;border-radius:6px;z-index:50}
+.skip:focus{left:calc(var(--gutter-l))}
+
+/* ---------- buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;min-height:48px;padding:0 1.25em;border-radius:999px;font:600 1rem/1 var(--body);text-decoration:none;border:1px solid transparent;transition:background-color .25s,color .25s,border-color .25s,transform .25s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-lamp{background:var(--straw);color:var(--ink)}
+.btn-lamp:hover{background:#E8CB90}
+.btn-ghost{border-color:color-mix(in srgb,var(--moon) 45%,transparent);color:var(--moon);background:color-mix(in srgb,var(--ink) 30%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn-ghost:hover{border-color:var(--moon)}
+.btn:active{transform:translateY(1px)}
+
+/* ---------- header */
+.top{position:absolute;inset:0 0 auto 0;z-index:5;padding-top:calc(env(safe-area-inset-top,0px) + 18px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:44px;height:44px;flex:none}
+.brand span{font-family:var(--display);font-size:1.35rem;letter-spacing:.01em;line-height:1}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a.l{text-decoration:none;font-weight:500;font-size:.98rem;color:var(--moon);opacity:.88}
+.nav a.l:hover{opacity:1;text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--straw)}
+.nav .btn{min-height:42px;padding:0 1em;font-size:.95rem}
+@media (max-width:860px){.nav a.l{display:none}}
+@media (max-width:420px){.brand span{font-size:1.15rem}.nav .btn .num{display:none}}
+
+/* ---------- hero */
+.hero{position:relative;height:min(92svh,940px);min-height:580px;overflow:hidden;background:var(--ink);isolation:isolate}
+.hero-media{position:absolute;inset:-8% 0 -8% 0;will-change:transform}
+.hero-media video,.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 52%}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(15,27,38,.55) 0%,rgba(15,27,38,0) 22%,rgba(15,27,38,0) 45%,rgba(15,27,38,.8) 82%,var(--ink) 100%),linear-gradient(90deg,rgba(15,27,38,.72) 0%,rgba(15,27,38,.35) 38%,rgba(15,27,38,0) 62%)}
+@media (max-width:640px){.hero::after{background:linear-gradient(180deg,rgba(15,27,38,.55) 0%,rgba(15,27,38,0) 20%,rgba(15,27,38,.25) 38%,rgba(15,27,38,.86) 66%,var(--ink) 100%)}}
+.bars{position:absolute;inset:0;z-index:3;pointer-events:none}
+.bars::before,.bars::after{content:"";position:absolute;left:0;right:0;height:13%;background:#000;transform:scaleY(0);transform-origin:top}
+.bars::before{top:0}.bars::after{bottom:0;transform-origin:bottom}
+.hero-copy{position:absolute;z-index:2;left:0;right:0;bottom:0;padding-bottom:clamp(36px,7vh,72px);will-change:transform}
+.hero h1{font-size:clamp(3.3rem,9.5vw,8.25rem);line-height:.9;letter-spacing:-.025em;max-width:10ch}
+.hero .sub{margin-top:18px;font-size:clamp(1.08rem,1.6vw,1.3rem);max-width:34ch;color:var(--moon)}
+.hero .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-size:.98rem;color:var(--mist);text-decoration:none}
+.rating:hover{color:var(--moon)}
+.stars{display:inline-flex;gap:2px;color:var(--straw)}
+.stars svg{width:15px;height:15px}
+.rating b{color:var(--moon);font-weight:600}
+.vid-toggle{position:absolute;z-index:4;right:var(--gutter-r);bottom:clamp(36px,7vh,72px);width:44px;height:44px;border-radius:50%;
+  border:1px solid color-mix(in srgb,var(--moon) 40%,transparent);background:color-mix(in srgb,var(--ink) 45%,transparent);color:var(--moon);display:grid;place-items:center;cursor:pointer}
+.vid-toggle svg{width:16px;height:16px}
+@media (max-width:640px){.vid-toggle{bottom:auto;top:calc(env(safe-area-inset-top,0px) + 86px)}}
+
+/* entrance: the camera arrives at the gate */
+@media (prefers-reduced-motion:no-preference){
+  .js .hero-media video,.js .hero-media img{animation:arrive 3.2s cubic-bezier(.2,.7,.1,1) both}
+  .js .bars::before,.js .bars::after{animation:bars 2.6s cubic-bezier(.7,0,.2,1) both}
+  .js .hero-copy>*{animation:rise 1.1s cubic-bezier(.2,.7,.1,1) both}
+  .js .hero-copy h1{animation-delay:.9s}
+  .js .hero-copy .sub{animation-delay:1.1s}
+  .js .hero-copy .row{animation-delay:1.25s}
+  .js .hero-copy .rating{animation-delay:1.4s}
+  .js .top{animation:fade 1s 1.4s both}
+}
+@keyframes arrive{from{transform:scale(1.14);filter:brightness(.15) saturate(.6)}to{transform:none;filter:none}}
+@keyframes bars{0%,35%{transform:scaleY(1)}100%{transform:scaleY(0)}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+/* ---------- section scaffolding */
+section{position:relative}
+.sec{padding-block:clamp(72px,11vw,140px)}
+.kicker{font-size:.95rem;color:var(--straw);font-weight:500;margin-bottom:14px}
+.sec h2{font-size:var(--step-4)}
+.lede{font-size:var(--step-1);line-height:1.5;color:var(--moon);max-width:36ch}
+.body-copy{color:var(--mist);max-width:58ch}
+
+/* ---------- grounds (about) */
+.grounds .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(40px,6vw,96px);align-items:center}
+.grounds .text{display:grid;gap:22px;min-width:0}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:10px 22px;margin:10px 0 0;padding-top:22px;border-top:1px solid var(--line);font-size:.98rem}
+.facts dt{color:var(--mist)}
+.facts dd{margin:0}
+.stack{position:relative;aspect-ratio:5/5.4;max-width:100%}
+.stack .layer{position:absolute;will-change:transform}
+.stack .back{inset:0 0 22% 14%}
+.stack .front{left:0;bottom:0;width:58%;aspect-ratio:4/3.1}
+.stack .back img,.stack .front img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+.stack .front img{box-shadow:0 30px 60px -20px rgba(0,0,0,.7);outline:6px solid var(--ink)}
+.stack .frame{right:-14px;bottom:6%;width:44%;height:30%;border:1px solid var(--straw);border-radius:2px;pointer-events:none}
+.stack figcaption{position:absolute;font-size:.85rem;color:var(--mist)}
+.stack .back figcaption{top:calc(100% + 10px);right:0}
+.stack .front figcaption{top:calc(100% + 10px);left:0}
+@media (max-width:860px){
+  .grounds .wrap{grid-template-columns:minmax(0,1fr)}
+  .stack{aspect-ratio:1/1.05;margin-top:12px}
+  .stack .frame{right:0}
+}
+
+/* ---------- events */
+.events{background:var(--ink-2)}
+.events .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:56px}
+.ev-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
+.ev-list li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:4px 18px;padding:30px 28px 30px 0;border-bottom:1px solid var(--line)}
+.ev-list li:nth-child(odd){border-right:1px solid var(--line)}
+.ev-list li:nth-child(even){padding-left:28px}
+.ev-list svg{width:40px;height:40px;color:var(--straw);grid-row:span 2}
+.ev-list h3{font-size:var(--step-2)}
+.ev-list p{color:var(--mist);max-width:42ch}
+@media (max-width:760px){
+  .events .head{grid-template-columns:minmax(0,1fr)}
+  .ev-list{grid-template-columns:minmax(0,1fr)}
+  .ev-list li:nth-child(odd){border-right:0}
+  .ev-list li:nth-child(even){padding-left:0}
+}
+
+/* ---------- gallery */
+.gallery .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px;margin-top:48px}
+.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:3px;background:var(--ink-2)}
+.gallery figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.1,1)}
+.gallery figure:hover img{transform:scale(1.03)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;font-size:.92rem;background:linear-gradient(180deg,transparent,rgba(15,27,38,.85))}
+.g-palapa{grid-column:1/-1;aspect-ratio:2.1/1}
+.g-gazebo{grid-column:1/8;aspect-ratio:1.45/1}
+.g-tile{grid-column:8/-1;background:var(--ink-2);border:1px solid var(--line);border-radius:3px;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;justify-content:flex-end;gap:18px}
+.g-tile h3{font-size:var(--step-2);color:var(--straw)}
+.g-tile ul{list-style:none;margin:0;padding:0;display:grid}
+.g-tile li{padding:10px 0;border-top:1px solid var(--line);color:var(--moon)}
+@media (max-width:700px){
+  .g-palapa{aspect-ratio:1.5/1}
+  .g-gazebo,.g-tile{grid-column:1/-1}
+  .g-gazebo{aspect-ratio:1.4/1}
+}
+
+/* ---------- reviews: the daylight band */
+.reviews{background:var(--day);color:var(--day-ink)}
+.reviews .kicker{color:#8A6A2C}
+.reviews .top-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px 40px}
+.score{display:flex;align-items:baseline;gap:14px}
+.score .big{font-family:var(--display);font-size:clamp(4rem,9vw,6.5rem);line-height:.8}
+.score .of{color:var(--day-mute);font-size:1rem;line-height:1.4}
+.score .stars{color:#B88A33}
+.quotes{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);margin-top:56px;align-items:start}
+.q{margin:0;display:grid;gap:18px}
+.q blockquote{margin:0;font-family:var(--display);line-height:1.18}
+.q-lead blockquote{font-size:clamp(2rem,4.2vw,3.4rem)}
+.q-side{display:grid;gap:40px}
+.q-side blockquote{font-size:clamp(1.4rem,2.2vw,1.85rem)}
+.q figcaption{font-size:.95rem;color:var(--day-mute)}
+.q figcaption b{color:var(--day-ink);font-weight:600}
+.q-lead .ph{margin-top:14px;aspect-ratio:16/10;border-radius:3px;overflow:hidden}
+.q-lead .ph img{width:100%;height:100%;object-fit:cover}
+.q-side .q{padding-top:28px;border-top:1px solid #C6D4CB}
+.reviews .more{margin-top:48px}
+.reviews .more a{color:var(--day-ink);font-weight:600;text-underline-offset:5px;text-decoration-color:#B88A33}
+@media (max-width:820px){.quotes{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- visit */
+.visit .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(48px,7vw,110px)}
+.status{display:inline-flex;align-items:center;gap:10px;margin:18px 0 26px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);font-size:.95rem}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--mist)}
+.status.open i{background:var(--lagoon);box-shadow:0 0 0 4px color-mix(in srgb,var(--lagoon) 25%,transparent)}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours th,.hours td{padding:13px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
+.hours td{text-align:right;color:var(--mist)}
+.hours tr.today th,.hours tr.today td{color:var(--straw)}
+.hours tr.today th::after{content:"Today";margin-left:10px;font-size:.78rem;padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--straw) 18%,transparent);vertical-align:2px}
+.addr{font-family:var(--display);font-size:var(--step-3);line-height:1.1;text-decoration:none;display:block;margin-top:18px}
+.addr:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:8px;text-decoration-color:var(--straw)}
+.plus{margin-top:14px;color:var(--mist)}
+.visit .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.copyline{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.copyline .num{font-size:var(--step-2);font-family:var(--display);user-select:all}
+.copy{background:none;border:1px solid var(--line);color:var(--mist);border-radius:999px;padding:8px 14px;font:500 .9rem var(--body);cursor:pointer}
+.copy:hover{color:var(--moon);border-color:var(--mist)}
+@media (max-width:820px){.visit .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- footer */
+footer{border-top:1px solid var(--line);padding-block:44px calc(44px + env(safe-area-inset-bottom,0px));font-size:.95rem;color:var(--mist)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px}
+footer .cols{display:flex;flex-wrap:wrap;gap:12px 40px}
+footer a{text-decoration:none;color:var(--moon)}
+footer a:hover{text-decoration:underline;text-underline-offset:4px}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Rancho Onazol home">
+      <svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="#D9B877" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32 9 9 30h46z"/><path d="M32 9 20.5 30M32 9v21M32 9l11.5 21"/>
+        <path d="M14 30v15M50 30v15M32 30v15"/>
+        <path d="M6 51c4.3 0 4.3-3 8.6-3s4.3 3 8.6 3 4.3-3 8.6-3 4.3 3 8.6 3 4.3-3 8.6-3 4.3 3 8.6 3" stroke="#5CCBD1"/>
+      </svg>
+      <span>Rancho Onazol</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a class="l" href="#grounds">The grounds</a>
+      <a class="l" href="#events">Events</a>
+      <a class="l" href="#reviews">Reviews</a>
+      <a class="l" href="#visit">Hours &amp; visit</a>
+      <a class="btn btn-lamp" href="tel:+19565566117"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call<span class="num">&nbsp;(956) 556-6117</span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top" aria-label="Rancho Onazol at night">
+  <div class="hero-media" data-depth="0.32">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/poster.webp" aria-hidden="true">
+      <source src="assets/hero-720.mp4" type="video/mp4" media="(max-width: 800px)">
+      <source src="assets/hero-1080.mp4" type="video/mp4">
+      <source src="assets/hero-720.webm" type="video/webm" media="(max-width: 800px)">
+      <source src="assets/hero-1080.webm" type="video/webm">
+    </video>
+  </div>
+  <div class="bars" aria-hidden="true"></div>
+  <div class="hero-copy" data-depth="-0.12">
+    <div class="wrap">
+      <h1>Rancho Onazol</h1>
+      <p class="sub">An event venue and outdoor grounds in Brownsville, Texas, for birthdays, family gatherings and nights under the lights.</p>
+      <div class="row">
+        <a class="btn btn-lamp" href="tel:+19565566117"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call (956) 556-6117</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rancho%20Onazol%2C%208685%20FM1732%2C%20Brownsville%2C%20TX%2078520" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Get directions</a>
+      </div>
+      <a class="rating" href="#reviews"><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg></span><span><b>4.8</b> from 26 Google reviews</span></a>
+    </div>
+  </div>
+  <button class="vid-toggle" id="vidToggle" type="button" aria-label="Pause background video" aria-pressed="false">
+    <svg class="i-pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3" y="2" width="3.5" height="12" rx="1"/><rect x="9.5" y="2" width="3.5" height="12" rx="1"/></svg>
+    <svg class="i-play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" hidden><path d="M4 2.5v11a.6.6 0 0 0 .9.5l9-5.5a.6.6 0 0 0 0-1l-9-5.5a.6.6 0 0 0-.9.5z"/></svg>
+  </button>
+</section>
+
+<main id="main">
+  <section class="grounds sec" id="grounds">
+    <div class="wrap">
+      <div class="text">
+        <p class="kicker">The grounds</p>
+        <h2>A ranch made for gathering, from morning until the lights come on.</h2>
+        <p class="lede">Rancho Onazol is a Latino-owned event venue on FM 1732 in Brownsville.</p>
+        <p class="body-copy">The property spreads out around the water: a pool at the center, a thatched palapa pavilion, a gazebo on its own island reached by a wooden bridge, and garden paths under the shade trees. Guests come for birthdays, family gatherings and outdoor events, and many stay into the evening when the grounds are lit.</p>
+        <dl class="facts">
+          <dt>Where</dt><dd>8685 FM1732, Brownsville, TX</dd>
+          <dt>Open</dt><dd>Every day from 9 AM</dd>
+          <dt>Late nights</dt><dd>Friday to Sunday until midnight</dd>
+        </dl>
+      </div>
+      <div class="stack" aria-label="Photos of the grounds">
+        <figure class="layer back" data-depth="-0.06" style="margin:0">
+          <img src="assets/aerial-900.webp" srcset="assets/aerial-900.webp 900w, assets/aerial-1537.webp 1537w" sizes="(max-width:860px) 90vw, 560px" width="1537" height="1116" alt="The turquoise lagoon, footbridge and palapa at Rancho Onazol in daylight" loading="lazy" decoding="async">
+          <figcaption>The lagoon and palapa by day</figcaption>
+        </figure>
+        <div class="layer frame" data-depth="0.2" aria-hidden="true"></div>
+        <figure class="layer front" data-depth="0.12" style="margin:0">
+          <img src="assets/stream-900.webp" srcset="assets/stream-900.webp 900w, assets/stream-1600.webp 1600w" sizes="(max-width:860px) 55vw, 340px" width="1600" height="1114" alt="A lit garden stream lined with stones under mesquite trees at night" loading="lazy" decoding="async">
+          <figcaption>The garden stream after dark</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="events sec" id="events">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="kicker">Events</p>
+          <h2>What people host here</h2>
+        </div>
+        <p class="body-copy">Call to ask about dates, setup and what your event needs.</p>
+      </div>
+      <ul class="ev-list">
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 34h24M10 34V20h20v14M10 26h20"/><path d="M15 20v-5M20 20v-5M25 20v-5"/><path d="M15 11c-1-1.4 0-3 0-3s1 1.6 0 3zM20 11c-1-1.4 0-3 0-3s1 1.6 0 3zM25 11c-1-1.4 0-3 0-3s1 1.6 0 3z"/></svg>
+          <h3>Birthdays</h3>
+          <p>Room for the whole party, with the pool, the palapa and open lawn all on one property.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="11" r="3.5"/><circle cx="27" cy="11" r="3.5"/><circle cx="20" cy="19" r="2.8"/><path d="M6 32v-5a7 7 0 0 1 14 0M20 27a7 7 0 0 1 14 0v5M15 32v-2.5a5 5 0 0 1 10 0V32"/></svg>
+          <h3>Family gatherings</h3>
+          <p>Shade trees, a pool for the kids and space to spread out for a full day together.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 5 4 17h32z"/><path d="M8 17v16M32 17v16M14 33V23h12v10"/><path d="M3 33h34"/></svg>
+          <h3>Outdoor events</h3>
+          <p>Set tables under the thatched palapa, gather at the gazebo, or use the grounds around the water.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12c4 3 8 4.5 16 4.5S32 15 36 12"/><path d="M10 15.5v3M18 16.5v3M26 16.3v3M33 14v3"/><path d="M27 24a6 6 0 1 0 6 8 5 5 0 0 1-6-8z"/></svg>
+          <h3>Evening celebrations</h3>
+          <p>Open until midnight Friday through Sunday, with string lights and lit paths across the property.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gallery sec" id="photos" aria-labelledby="g-title">
+    <div class="wrap">
+      <p class="kicker">Around the property</p>
+      <h2 id="g-title">See the place before you call</h2>
+      <div class="grid">
+        <figure class="g-palapa">
+          <img src="assets/palapa-900.webp" srcset="assets/palapa-900.webp 900w, assets/palapa-1600.webp 1600w" sizes="(max-width:1180px) 92vw, 1140px" width="1600" height="827" alt="Tables with white linens, chair covers and floral centerpieces under the thatched palapa" loading="lazy" decoding="async">
+          <figcaption>The palapa, set for an event</figcaption>
+        </figure>
+        <figure class="g-gazebo">
+          <img src="assets/gazebo-900.webp" srcset="assets/gazebo-900.webp 900w, assets/gazebo-1600.webp 1600w" sizes="(max-width:700px) 92vw, 660px" width="1600" height="1114" alt="The wooden bridge leading to the lighted gazebo island" loading="lazy" decoding="async">
+          <figcaption>The bridge to the gazebo island</figcaption>
+        </figure>
+        <div class="g-tile">
+          <h3>On the property</h3>
+          <ul>
+            <li>Swimming pool</li>
+            <li>Thatched palapa pavilion</li>
+            <li>Gazebo island and wooden bridge</li>
+            <li>Lagoon with footbridge</li>
+            <li>Garden stream and shade trees</li>
+            <li>String lights and lit paths</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews sec" id="reviews" aria-labelledby="r-title">
+    <div class="wrap">
+      <div class="top-row">
+        <div>
+          <p class="kicker">From guests on Google</p>
+          <h2 id="r-title">What guests say</h2>
+        </div>
+        <div class="score" aria-label="Rated 4.8 out of 5 from 26 Google reviews">
+          <span class="big">4.8</span>
+          <span class="of"><span class="stars" aria-hidden="true">★★★★★</span><br>26 Google reviews</span>
+        </div>
+      </div>
+      <div class="quotes">
+        <figure class="q q-lead">
+          <blockquote><p>“Good vibes beautiful grounds and friendly management.”</p></blockquote>
+          <figcaption><b>Vortex Farmer</b>, Google review</figcaption>
+          <div class="ph"><img src="assets/pool-900.webp" srcset="assets/pool-900.webp 900w, assets/pool-1600.webp 1600w" sizes="(max-width:820px) 92vw, 640px" width="1600" height="1110" alt="Children swimming in the lit pool at night, with the gazebo and covered patio behind" loading="lazy" decoding="async"></div>
+        </figure>
+        <div class="q-side">
+          <figure class="q">
+            <blockquote><p>“Nice place to bring the family. Has a nice pool. Good place to have an event.”</p></blockquote>
+            <figcaption><b>Leticia Anderson</b>, Local Guide on Google</figcaption>
+          </figure>
+          <figure class="q">
+            <blockquote><p>“Beautiful spot to host any fun outdoor event.!!”</p></blockquote>
+            <figcaption><b>classic73</b>, Local Guide on Google</figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="more"><a href="https://www.google.com/maps/search/?api=1&amp;query=Rancho%20Onazol%2C%208685%20FM1732%2C%20Brownsville%2C%20TX%2078520" target="_blank" rel="noopener">Read all reviews on Google Maps</a></p>
+    </div>
+  </section>
+
+  <section class="visit sec" id="visit" aria-label="Hours and location">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Hours</p>
+        <h2>Open every day</h2>
+        <p class="status" id="status" role="status"><i></i><span>Open daily from 9 AM</span></p>
+        <table class="hours" aria-label="Opening hours">
+          <tbody>
+            <tr data-d="1"><th scope="row">Monday</th><td>9 AM – 8 PM</td></tr>
+            <tr data-d="2"><th scope="row">Tuesday</th><td>9 AM – 8 PM</td></tr>
+            <tr data-d="3"><th scope="row">Wednesday</th><td>9 AM – 8 PM</td></tr>
+            <tr data-d="4"><th scope="row">Thursday</th><td>9 AM – 8 PM</td></tr>
+            <tr data-d="5"><th scope="row">Friday</th><td>9 AM – 12 AM</td></tr>
+            <tr data-d="6"><th scope="row">Saturday</th><td>9 AM – 12 AM</td></tr>
+            <tr data-d="0"><th scope="row">Sunday</th><td>9 AM – 12 AM</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p class="kicker">Location</p>
+        <h2>Find the ranch</h2>
+        <a class="addr" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rancho%20Onazol%2C%208685%20FM1732%2C%20Brownsville%2C%20TX%2078520" target="_blank" rel="noopener">8685 FM1732<br>Brownsville, TX 78520</a>
+        <p class="plus">Plus code 2F94+R4 Brownsville, Texas</p>
+        <div class="row">
+          <a class="btn btn-lamp" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rancho%20Onazol%2C%208685%20FM1732%2C%20Brownsville%2C%20TX%2078520" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Get directions</a>
+          <a class="btn btn-ghost" href="tel:+19565566117"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call the ranch</a>
+        </div>
+        <div class="copyline">
+          <a class="num" href="tel:+19565566117">(956) 556-6117</a>
+          <button class="copy" type="button" id="copyPhone">Copy number</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="#D9B877" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32 9 9 30h46z"/><path d="M32 9 20.5 30M32 9v21M32 9l11.5 21"/>
+        <path d="M14 30v15M50 30v15M32 30v15"/>
+        <path d="M6 51c4.3 0 4.3-3 8.6-3s4.3 3 8.6 3 4.3-3 8.6-3 4.3 3 8.6 3 4.3-3 8.6-3 4.3 3 8.6 3" stroke="#5CCBD1"/>
+      </svg>
+      <span>Rancho Onazol</span>
+    </a>
+    <div class="cols">
+      <a href="tel:+19565566117">(956) 556-6117</a>
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rancho%20Onazol%2C%208685%20FM1732%2C%20Brownsville%2C%20TX%2078520" target="_blank" rel="noopener">8685 FM1732, Brownsville, TX 78520</a>
+      <a href="https://ranchoonazol.com/">ranchoonazol.com</a>
+    </div>
+    <p>Latino-owned event venue in Brownsville, Texas. © <span id="yr">2026</span> Rancho Onazol</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement; root.classList.add('js');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  /* video: reduced motion shows the poster still; toggle for everyone else */
+  var v=document.getElementById('heroVideo'), t=document.getElementById('vidToggle');
+  function setPaused(p){
+    if(p){v.pause()}else{var pr=v.play(); if(pr&&pr.catch)pr.catch(function(){})}
+    t.setAttribute('aria-pressed',p?'true':'false');
+    t.setAttribute('aria-label',p?'Play background video':'Pause background video');
+    t.querySelector('.i-pause').hidden=p; t.querySelector('.i-play').hidden=!p;
+  }
+  if(reduce.matches){v.removeAttribute('autoplay');setPaused(true)}
+  t.addEventListener('click',function(){setPaused(!v.paused?true:false)});
+
+  /* parallax: transform-only, rAF-batched, 3 depths */
+  var layers=[].slice.call(document.querySelectorAll('[data-depth]'));
+  var ticking=false, vh=window.innerHeight, mobile=window.matchMedia('(max-width: 760px)');
+  function frame(){
+    ticking=false;
+    var k=mobile.matches?0.6:1;
+    for(var i=0;i<layers.length;i++){
+      var el=layers[i], host=el.offsetParent||el.parentNode;
+      var r=host.getBoundingClientRect();
+      if(r.bottom<-200||r.top>vh+200) continue;
+      var d=parseFloat(el.dataset.depth)*k;
+      var y;
+      if(el.closest('.hero')){ y=Math.max(0,-r.top)*d; }
+      else { y=((r.top+r.height/2)-vh/2)*-d; }
+      el.style.transform='translate3d(0,'+y.toFixed(1)+'px,0)';
+    }
+  }
+  function req(){ if(!ticking){ticking=true;requestAnimationFrame(frame)} }
+  function bind(){
+    if(reduce.matches){ layers.forEach(function(el){el.style.transform=''}); window.removeEventListener('scroll',req); return; }
+    window.addEventListener('scroll',req,{passive:true}); req();
+  }
+  window.addEventListener('resize',function(){vh=window.innerHeight;req()},{passive:true});
+  if(reduce.addEventListener) reduce.addEventListener('change',function(){bind(); setPaused(reduce.matches)});
+  bind();
+
+  /* hours: today + open status in Brownsville time */
+  var hours={0:[9,24],1:[9,20],2:[9,20],3:[9,20],4:[9,20],5:[9,24],6:[9,24]};
+  function fmt(h){ if(h===24||h===0) return '12 AM'; if(h===12) return '12 PM'; return (h>12?h-12:h)+(h>=12?' PM':' AM'); }
+  try{
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date());
+    var get=function(t){for(var i=0;i<parts.length;i++) if(parts[i].type===t) return parts[i].value};
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    var now=parseInt(get('hour'),10)+parseInt(get('minute'),10)/60;
+    var row=document.querySelector('.hours tr[data-d="'+day+'"]'); if(row) row.classList.add('today');
+    var h=hours[day], s=document.getElementById('status'), txt;
+    if(now>=h[0]&&now<h[1]){ s.classList.add('open'); txt='Open now, closes at '+fmt(h[1]); }
+    else if(now<h[0]){ txt='Closed now, opens today at '+fmt(h[0]); }
+    else { txt='Closed now, opens tomorrow at '+fmt(hours[(day+1)%7][0]); }
+    s.querySelector('span').textContent=txt;
+    document.getElementById('yr').textContent=new Date().getFullYear();
+  }catch(e){}
+
+  /* copy phone */
+  var c=document.getElementById('copyPhone');
+  c.addEventListener('click',function(){
+    var done=function(){c.textContent='Copied';setTimeout(function(){c.textContent='Copy number'},2000)};
+    var sel=function(){var n=document.querySelector('.copyline .num');var r=document.createRange();r.selectNodeContents(n);var s=getSelection();s.removeAllRanges();s.addRange(r);c.textContent='Selected, press copy'};
+    try{ navigator.clipboard.writeText('(956) 556-6117').then(done,sel) }catch(e){ sel() }
+  });
+})();
+</script>
+</body>
+</html>
